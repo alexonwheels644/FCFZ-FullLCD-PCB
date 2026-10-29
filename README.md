@@ -15,7 +15,7 @@ Full-featured DIY Flipper Zero clone with an LCD display.
 
 
 ## 💾 Firmware & Software
-> 🚀 **Looking for the code?** You can find the compiled binaries, source code, and flashing instructions in the official firmware section:
+> 🚀 **Looking for the code?** You can find the compiled binaries, source code, and flashing instructions in my firmware section:
 > 👉 **[Download Firmware Here](https://github.com/alexonwheels644/FCFZ-FullLCD)
 )**
 
