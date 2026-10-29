@@ -121,7 +121,7 @@ For a flawless manual assembly, it is highly recommended to use premium flux, th
 ### Phase 1: Micro SMD Passives (0805 Form Factor)
 * **Step 1:** Populate and reflow all **0805 SMD Resistors** across the board. Double-check small values like the R23 (0.1 Ohm shunt) to ensure accuracy.
 * **Step 2:** Populate all **0805 SMD Capacitors**. 
-  * ⚠️ **CRITICAL WARNING:** **C1 (3.3nF)** dictates the stability of your sub-GHz tuning circuit. You **must** utilize a high-quality **0805 C0G/NP0** rated capacitor here. Regular X7R/Y5V dielectrics will drift with temperature fluctuations and completely break radio communication reliability.
+  * ⚠️ **CRITICAL WARNING:** **C1 (3.3nF)** dictates the stability of your 125khz. You **must** utilize a high-quality **0805 C0G/NP0** rated capacitor here. Regular X7R/Y5V dielectrics will drift with temperature fluctuations and completely break radio communication reliability.
 
 ### Phase 2: Structural Connector Breakouts
 * **Step 3:** Mount the **2.54mm Pin Headers (1x10 and 1x8)**. Use a breadboard as a leveling jig during soldering to ensure the pins remain perpendicular to the PCB surface.
@@ -145,14 +145,14 @@ For a flawless manual assembly, it is highly recommended to use premium flux, th
 
 ### Phase 8: Optoelectronics & Infrared Network
 * **Step 9:** Fit the **IR LED** and the **IR Receiver** into their respective pins.
-  * ⚠️ **POST-SOLDER TRIMMING:** Once the IR receiver leads are successfully soldered, use flush cutters to trim the excess pins completely flush (under 0mm clearance) on the opposite side of the PCB. This step is necessary to clear out the mechanical footprint space for items mounted directly behind it.
+  * ⚠️ **POST-SOLDER TRIMMING:** Once the IR transmitter leads are successfully soldered, use flush cutters to trim the excess pins completely flush (under 0mm clearance) on the opposite side of the PCB. This step is necessary to clear out the mechanical footprint space for items mounted directly behind it.
 
 ### Phase 9: Radio Communications Node
 * **Step 10:** Drop the **E07-400MM10S Sub-GHz module** onto its surface-mount castellated pads. Pre-tinning the PCB pads with solder before placing the module makes it much easier to bridge the connection cleanly. Finish by soldering the **ANT spring antenna** directly to its output pad.
 
 ### Phase 10: Core Processing Brain Injection
 * **Step 11:** Align the **WeAct STM32WB55CGU6 Development Board** onto its pin rows. Solder all anchoring lines securely.
-  * ⚠️ **POST-SOLDER TRIMMING:** Just like the IR receiver node, use high-precision flush cutters to crop the remaining through-hole pins on the opposite side of the PCB completely flat against the solder joints. If these pins project outward, they will cause a physical collision and puncture the display panel.
+  * ⚠️ **POST-SOLDER TRIMMING:** Just like the IR transmitter node, use high-precision flush cutters to crop the remaining through-hole pins on the opposite side of the PCB completely flat against the solder joints. If these pins project outward, they will cause a physical collision and puncture the display panel.
 
 ### Phase 11: Display Panel Integration
 * **Step 12:** Gently route and solder the **1.4-inch ST7567 LCD Display** directly over the flat-trimmed base of the board. Remove the protective plastic film only after your final enclosure assembly is complete to avoid scratching the display surface.
